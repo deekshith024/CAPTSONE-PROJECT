@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  PlateParty
 //
-//  Created by Karthik Reddy Rondla on 2023-04-08.
+//  Created by Deekshith on 2023-04-08.
 //
 
 import UIKit
@@ -14,6 +14,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+//
 }
 
