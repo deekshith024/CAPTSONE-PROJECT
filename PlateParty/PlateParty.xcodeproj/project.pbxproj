@@ -15,6 +15,8 @@
 		945C56AD29E1E50500AF4CEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945C56AB29E1E50500AF4CEE /* LaunchScreen.storyboard */; };
 		945C56B729E1E8D600AF4CEE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945C56B629E1E8D600AF4CEE /* OnboardingViewController.swift */; };
 		945C56BA29E1EE2100AF4CEE /* UiViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945C56B929E1EE2100AF4CEE /* UiViewExtension.swift */; };
+		94E78FAF29E700A30083893C /* OnBoardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E78FAE29E700A30083893C /* OnBoardingSlide.swift */; };
+		94E78FB129E7033F0083893C /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E78FB029E7033F0083893C /* OnboardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		945C56AE29E1E50500AF4CEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		945C56B629E1E8D600AF4CEE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		945C56B929E1EE2100AF4CEE /* UiViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewExtension.swift; sourceTree = "<group>"; };
+		94E78FAE29E700A30083893C /* OnBoardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSlide.swift; sourceTree = "<group>"; };
+		94E78FB029E7033F0083893C /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +48,6 @@
 		945C569429E1E50400AF4CEE = {
 			isa = PBXGroup;
 			children = (
-				945C56B829E1EDEC00AF4CEE /* Extensions */,
-				945C56B429E1E88200AF4CEE /* Views */,
 				945C569F29E1E50400AF4CEE /* PlateParty */,
 				945C569E29E1E50400AF4CEE /* Products */,
 			);
@@ -62,6 +64,9 @@
 		945C569F29E1E50400AF4CEE /* PlateParty */ = {
 			isa = PBXGroup;
 			children = (
+				94E78FAD29E6FC160083893C /* Models */,
+				945C56B429E1E88200AF4CEE /* Views */,
+				945C56B829E1EDEC00AF4CEE /* Extensions */,
 				945C56A029E1E50400AF4CEE /* AppDelegate.swift */,
 				945C56A229E1E50400AF4CEE /* SceneDelegate.swift */,
 				945C56A429E1E50400AF4CEE /* ViewController.swift */,
@@ -85,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				945C56B629E1E8D600AF4CEE /* OnboardingViewController.swift */,
+				94E78FB029E7033F0083893C /* OnboardingCollectionViewCell.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -95,6 +101,14 @@
 				945C56B929E1EE2100AF4CEE /* UiViewExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		94E78FAD29E6FC160083893C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				94E78FAE29E700A30083893C /* OnBoardingSlide.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +186,8 @@
 				945C56A129E1E50400AF4CEE /* AppDelegate.swift in Sources */,
 				945C56A329E1E50400AF4CEE /* SceneDelegate.swift in Sources */,
 				945C56B729E1E8D600AF4CEE /* OnboardingViewController.swift in Sources */,
+				94E78FAF29E700A30083893C /* OnBoardingSlide.swift in Sources */,
+				94E78FB129E7033F0083893C /* OnboardingCollectionViewCell.swift in Sources */,
 				945C56BA29E1EE2100AF4CEE /* UiViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
