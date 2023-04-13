@@ -42,6 +42,9 @@ class OnboardingViewController: UIViewController {
             OnBoardingSlide(title: "Instant Delivery", description: "Your orders will be delivered instantly", image: UIImage(named: "slide3.png")!)
          ]
         
+        //page slide dots while sliding
+        pageControl.numberOfPages = slides.count
+        
     }
   
     
