@@ -50,7 +50,14 @@ class OnboardingViewController: UIViewController {
     
     @IBAction func nextBtnClicked(_ sender: UIButton) {
         if currentPage == slides.count - 1 {
-            print("Go to the next page")
+//            print("Go to the next page")
+            let controller = storyboard?.instantiateViewController(identifier: "HomeNC") as! UINavigationController
+            
+            controller.modalPresentationStyle = .fullScreen
+            
+            //when "get start" button is clicked
+            controller.modalTransitionStyle = .partialCurl
+            present(controller, animated: true, completion: nil)
             
         } else {
             
