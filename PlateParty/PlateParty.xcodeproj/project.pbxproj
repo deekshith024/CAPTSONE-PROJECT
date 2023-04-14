@@ -21,6 +21,7 @@
 		94E78FBA29E8A3260083893C /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E78FB829E8A3260083893C /* CategoryCollectionViewCell.swift */; };
 		94E78FBB29E8A3260083893C /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E78FB929E8A3260083893C /* CategoryCollectionViewCell.xib */; };
 		94E78FBD29E8AA0C0083893C /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E78FBC29E8AA0C0083893C /* DishCategory.swift */; };
+		94E78FC029EA12710083893C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E78FBF29EA12710083893C /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		94E78FB829E8A3260083893C /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		94E78FB929E8A3260083893C /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		94E78FBC29E8AA0C0083893C /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
+		94E78FBF29EA12710083893C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		94E78FB529E8A2A00083893C /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				94E78FBE29EA123D0083893C /* CardView */,
 				94E78FB629E8A2B70083893C /* CollectionViewCells */,
 			);
 			path = CustomViews;
@@ -153,6 +156,14 @@
 				94E78FB929E8A3260083893C /* CategoryCollectionViewCell.xib */,
 			);
 			path = CategoryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		94E78FBE29EA123D0083893C /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				94E78FBF29EA12710083893C /* CardView.swift */,
+			);
+			path = CardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +247,7 @@
 				945C56B729E1E8D600AF4CEE /* OnboardingViewController.swift in Sources */,
 				94E78FAF29E700A30083893C /* OnBoardingSlide.swift in Sources */,
 				94E78FB129E7033F0083893C /* OnboardingCollectionViewCell.swift in Sources */,
+				94E78FC029EA12710083893C /* CardView.swift in Sources */,
 				945C56BA29E1EE2100AF4CEE /* UiViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
