@@ -51,6 +51,7 @@ class OnboardingViewController: UIViewController {
     
     
     
+    
     @IBAction func nextBtnClicked(_ sender: UIButton) {
         if currentPage == slides.count - 1 {
 //            print("Go to the next page")
