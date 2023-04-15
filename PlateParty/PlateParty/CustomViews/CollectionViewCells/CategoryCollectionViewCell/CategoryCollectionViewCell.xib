@@ -17,18 +17,18 @@
                 <rect key="frame" x="0.0" y="0.0" width="150" height="61"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llC-GX-8ub" customClass="CardView" customModule="PlateParty" customModuleProvider="target">
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="llC-GX-8ub" customClass="CardView" customModule="PlateParty" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="10" width="150" height="56"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zZP-YS-fwt">
-                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                <rect key="frame" x="8" y="8" width="80" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="2mC-dX-drd"/>
-                                    <constraint firstAttribute="height" constant="40" id="sSd-zJ-bIY"/>
+                                    <constraint firstAttribute="width" constant="80" id="2mC-dX-drd"/>
+                                    <constraint firstAttribute="height" constant="80" id="sSd-zJ-bIY"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tN-8M-bec">
-                                <rect key="frame" x="56" y="20.333333333333332" width="86" height="15.666666666666668"/>
+                                <rect key="frame" x="96" y="40.333333333333336" width="46" height="15.666666666666664"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,9 +41,9 @@
                             <constraint firstItem="zZP-YS-fwt" firstAttribute="top" secondItem="llC-GX-8ub" secondAttribute="top" constant="8" id="8vm-19-IDT"/>
                             <constraint firstAttribute="trailing" secondItem="7tN-8M-bec" secondAttribute="trailing" constant="8" id="GoQ-6E-P8m"/>
                             <constraint firstAttribute="width" constant="150" id="TvY-9b-oQb"/>
-                            <constraint firstAttribute="height" constant="56" id="YJI-k1-dtX"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="a7U-at-lEt"/>
                             <constraint firstItem="zZP-YS-fwt" firstAttribute="leading" secondItem="llC-GX-8ub" secondAttribute="leading" constant="8" id="gG5-7R-9iH"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="180" id="iXa-7B-ACX"/>
                             <constraint firstItem="7tN-8M-bec" firstAttribute="leading" secondItem="zZP-YS-fwt" secondAttribute="trailing" constant="8" id="xSh-tZ-JDg"/>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="y5W-pl-BmK"/>
                         </constraints>
