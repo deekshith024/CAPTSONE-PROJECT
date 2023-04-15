@@ -27,6 +27,8 @@
 		94E78FC829EA22130083893C /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E78FC729EA22130083893C /* Dish.swift */; };
 		94E78FCC29EB271D0083893C /* DishLandscapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E78FCA29EB271D0083893C /* DishLandscapeCollectionViewCell.swift */; };
 		94E78FCD29EB271D0083893C /* DishLandscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E78FCB29EB271D0083893C /* DishLandscapeCollectionViewCell.xib */; };
+		94E78FD029EB3C9C0083893C /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E78FCF29EB3C9C0083893C /* DishDetailViewController.swift */; };
+		94E78FD229EB41490083893C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E78FD129EB41480083893C /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		94E78FC729EA22130083893C /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		94E78FCA29EB271D0083893C /* DishLandscapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandscapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		94E78FCB29EB271D0083893C /* DishLandscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandscapeCollectionViewCell.xib; sourceTree = "<group>"; };
+		94E78FCF29EB3C9C0083893C /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
+		94E78FD129EB41480083893C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 		945C56B429E1E88200AF4CEE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				94E78FCE29EB3C730083893C /* DishDetail */,
 				94E78FB229E89C590083893C /* Home */,
 				945C56B529E1E8AD00AF4CEE /* Onboarding */,
 			);
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				945C56B929E1EE2100AF4CEE /* UiViewExtension.swift */,
+				94E78FD129EB41480083893C /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -197,6 +203,14 @@
 			path = DishlandscapeCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		94E78FCE29EB3C730083893C /* DishDetail */ = {
+			isa = PBXGroup;
+			children = (
+				94E78FCF29EB3C9C0083893C /* DishDetailViewController.swift */,
+			);
+			path = DishDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -271,12 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94E78FD229EB41490083893C /* UIViewController+Extension.swift in Sources */,
 				945C56A529E1E50400AF4CEE /* ViewController.swift in Sources */,
 				94E78FBD29E8AA0C0083893C /* DishCategory.swift in Sources */,
 				945C56A129E1E50400AF4CEE /* AppDelegate.swift in Sources */,
 				945C56A329E1E50400AF4CEE /* SceneDelegate.swift in Sources */,
 				94E78FB429E89C860083893C /* HomeViewController.swift in Sources */,
 				94E78FBA29E8A3260083893C /* CategoryCollectionViewCell.swift in Sources */,
+				94E78FD029EB3C9C0083893C /* DishDetailViewController.swift in Sources */,
 				945C56B729E1E8D600AF4CEE /* OnboardingViewController.swift in Sources */,
 				94E78FAF29E700A30083893C /* OnBoardingSlide.swift in Sources */,
 				94E78FCC29EB271D0083893C /* DishLandscapeCollectionViewCell.swift in Sources */,

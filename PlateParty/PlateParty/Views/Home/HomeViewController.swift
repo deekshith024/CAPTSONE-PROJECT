@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var popularCollectionView: UICollectionView!
     
     
+    @IBOutlet weak var specialsCollectionView: UICollectionView!
     
     
     var categories: [DishCategory] = [
@@ -27,10 +28,16 @@ class HomeViewController: UIViewController {
     
     var populars: [Dish] = [
         .init(id: "id1", name: "South Indian", descprition: "This is South Indian Dish", image: UIImage(named: "slide1.png")!, calories: 370),
-        .init(id: "id1", name: "Spicey",descprition: "This is South Indian Dish", image: UIImage(named: "slide1.png")!, calories: 560),
+        .init(id: "id1", name: "Spicey", descprition: "This is South Indian Dish", image: UIImage(named: "slide1.png")!, calories: 560),
         .init(id: "id1", name: "North Indian", descprition: "This is South Indian Dish", image: UIImage(named: "slide1.png")!, calories: 680),
        ]
     
+    
+    var specials: [Dish] = [
+        .init(id: "id1", name: "Biryani", descprition: "This is my Favourite", image: UIImage(named: "slide1.png")!, calories: 630),
+        .init(id: "id1", name: "Butter Nan",descprition: "I love it!", image: UIImage(named: "slide1.png")!, calories: 440),
+        .init(id: "id1", name: "Haleem", descprition: "Ramjan special", image: UIImage(named: "slide1.png")!, calories: 800),
+    ]
     
     
     
@@ -38,7 +45,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
 //        title = "PlateParty"
-        
+        specialsCollectionView.dataSource = self
+        specialsCollectionView.delegate = self
     registerCells()
         
     }
@@ -50,6 +58,7 @@ class HomeViewController: UIViewController {
         
         popularCollectionView.register(UINib(nibName: DishPortraitCollectionViewCell.identifier, bundle: nil),  forCellWithReuseIdentifier: DishPortraitCollectionViewCell.identifier)
         
+        specialsCollectionView.register(UINib(nibName: DishLandscapeCollectionViewCell.identifier, bundle: nil),  forCellWithReuseIdentifier: DishLandscapeCollectionViewCell.identifier)
         
     }
 }
@@ -62,6 +71,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return categories.count
         case popularCollectionView:
             return populars.count
+        case specialsCollectionView:
+            return specials.count
         default: return 0
         }
         
@@ -78,7 +89,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             
             cell.setup(category: categories[indexPath.row])
             return cell
-          
+            
         case popularCollectionView:
             
             
@@ -86,11 +97,29 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             
             cell.setup(dish: populars[indexPath.row])
             return cell
+            
+        case specialsCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishLandscapeCollectionViewCell.identifier, for: indexPath) as! DishLandscapeCollectionViewCell
+            
+            cell.setup(dish: specials[indexPath.row])
+            return cell
         default: return UICollectionViewCell()
+            
+            
         }
-        
-        
-        
-      
+   
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == categoryCollectionView {
+            
+        }
+        else {
+            let controller = DishDetailViewController.instantiate()
+            controller.dish = collectionView == popularCollectionView ? populars[indexPath.row] : specials[indexPath.row]
+            navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    
+    
 }
